@@ -7,14 +7,36 @@
     "test": "test"
   },
   "scripts": {
-    "test": "truffle test",
-    "migrate": "truffle migrate",
-    "deploy": "truffle deploy"
+    "test:contracts": "truffle test",
+    "migrate": "truffle migrate && yarn run copy-contracts",
+    "compile": "truffle compile && yarn run copy-contracts",
+    "deploy": "truffle deploy && yarn run copy-contracts",
+    "copy-contracts": "rm -rf ./src/contracts && cp -r ./build/contracts ./src/contracts",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "truffle": "^5.4.12"
+    "truffle": "^5.4.12",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-scripts": "3.2.0",
+    "web3": "1.2.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
