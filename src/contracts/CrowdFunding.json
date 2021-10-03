@@ -301,21 +301,14 @@
   "ast": {
     "absolutePath": "project:/contracts/CrowdFunding.sol",
     "exportedSymbols": {
-      "CrowdFunding": [
-        298
-      ]
+      "CrowdFunding": [298]
     },
     "id": 299,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          "^",
-          "0.5",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.5", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:23:0"
       },
@@ -337,9 +330,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 298,
-        "linearizedBaseContracts": [
-          298
-        ],
+        "linearizedBaseContracts": [298],
         "name": "CrowdFunding",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -836,10 +827,7 @@
                       "id": 41,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        444,
-                        445
-                      ],
+                      "overloadedDeclarations": [444, 445],
                       "referencedDeclaration": 445,
                       "src": "597:7:0",
                       "typeDescriptions": {
@@ -1587,10 +1575,7 @@
                       "id": 104,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        444,
-                        445
-                      ],
+                      "overloadedDeclarations": [444, 445],
                       "referencedDeclaration": 445,
                       "src": "1208:7:0",
                       "typeDescriptions": {
@@ -2058,10 +2043,7 @@
                       "id": 140,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        444,
-                        445
-                      ],
+                      "overloadedDeclarations": [444, 445],
                       "referencedDeclaration": 445,
                       "src": "1519:7:0",
                       "typeDescriptions": {
@@ -2889,10 +2871,7 @@
                       "id": 203,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        444,
-                        445
-                      ],
+                      "overloadedDeclarations": [444, 445],
                       "referencedDeclaration": 445,
                       "src": "2068:7:0",
                       "typeDescriptions": {
@@ -2919,9 +2898,7 @@
                   "src": "2068:59:0"
                 },
                 {
-                  "assignments": [
-                    214
-                  ],
+                  "assignments": [214],
                   "declarations": [
                     {
                       "constant": false,
@@ -4011,20 +3988,13 @@
     "attributes": {
       "absolutePath": "project:/contracts/CrowdFunding.sol",
       "exportedSymbols": {
-        "CrowdFunding": [
-          298
-        ]
+        "CrowdFunding": [298]
       }
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            "^",
-            "0.5",
-            ".0"
-          ]
+          "literals": ["solidity", "^", "0.5", ".0"]
         },
         "id": 1,
         "name": "PragmaDirective",
@@ -4036,9 +4006,7 @@
           "absolutePath": "project:/contracts/Utils.sol",
           "file": "./Utils.sol",
           "scope": 299,
-          "symbolAliases": [
-            null
-          ],
+          "symbolAliases": [null],
           "unitAlias": ""
         },
         "id": 2,
@@ -4047,18 +4015,12 @@
       },
       {
         "attributes": {
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            298
-          ],
+          "linearizedBaseContracts": [298],
           "name": "CrowdFunding",
           "scope": 299
         },
@@ -4539,9 +4501,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4558,10 +4518,7 @@
                                   "typeString": "literal_string \"Invalid state\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                444,
-                                445
-                              ],
+                              "overloadedDeclarations": [444, 445],
                               "referencedDeclaration": 445,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -4588,9 +4545,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 29,
                                   "type": "enum CrowdFunding.State",
                                   "value": "state"
@@ -4602,9 +4557,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 39,
                                   "type": "enum CrowdFunding.State",
                                   "value": "expectedState"
@@ -4666,9 +4619,7 @@
               "implemented": true,
               "isConstructor": true,
               "kind": "constructor",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "",
               "scope": 298,
               "stateMutability": "nonpayable",
@@ -4790,9 +4741,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 60,
@@ -4817,9 +4766,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 19,
                               "type": "string storage ref",
                               "value": "name"
@@ -4831,9 +4778,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 52,
                               "type": "string memory",
                               "value": "contractName"
@@ -4868,9 +4813,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 21,
                               "type": "uint256",
                               "value": "targetAmount"
@@ -4887,9 +4830,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "uint256",
                               "type_conversion": false
                             },
@@ -4914,9 +4855,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 426,
                                       "type": "type(library Utils)",
                                       "value": "Utils"
@@ -4933,9 +4872,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 54,
                                   "type": "uint256",
                                   "value": "targetAmountEth"
@@ -4975,9 +4912,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 23,
                               "type": "uint256",
                               "value": "fundingDeadline"
@@ -5004,29 +4939,21 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "arguments": [
-                                    null
-                                  ],
+                                  "arguments": [null],
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
                                   "isStructConstructorCall": false,
                                   "lValueRequested": false,
-                                  "names": [
-                                    null
-                                  ],
+                                  "names": [null],
                                   "type": "uint256",
                                   "type_conversion": false
                                 },
                                 "children": [
                                   {
                                     "attributes": {
-                                      "argumentTypes": [
-                                        null
-                                      ],
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "argumentTypes": [null],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 262,
                                       "type": "function () view returns (uint256)",
                                       "value": "currentTime"
@@ -5048,9 +4975,7 @@
                                   "isPure": false,
                                   "isStructConstructorCall": false,
                                   "lValueRequested": false,
-                                  "names": [
-                                    null
-                                  ],
+                                  "names": [null],
                                   "type": "uint256",
                                   "type_conversion": false
                                 },
@@ -5075,9 +5000,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 426,
                                           "type": "type(library Utils)",
                                           "value": "Utils"
@@ -5094,9 +5017,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 56,
                                       "type": "uint256",
                                       "value": "durationInMin"
@@ -5141,9 +5062,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 25,
                               "type": "address payable",
                               "value": "beneficiary"
@@ -5155,9 +5074,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 58,
                               "type": "address payable",
                               "value": "beneficiaryAddress"
@@ -5192,9 +5109,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 27,
                               "type": "address",
                               "value": "owner"
@@ -5218,9 +5133,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 441,
                                   "type": "msg",
                                   "value": "msg"
@@ -5260,9 +5173,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 29,
                               "type": "enum CrowdFunding.State",
                               "value": "state"
@@ -5286,9 +5197,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 9,
                                   "type": "type(enum CrowdFunding.State)",
                                   "value": "State"
@@ -5337,9 +5246,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 98,
@@ -5348,9 +5255,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 103,
@@ -5362,9 +5267,7 @@
                   {
                     "attributes": {
                       "argumentTypes": null,
-                      "overloadedDeclarations": [
-                        null
-                      ],
+                      "overloadedDeclarations": [null],
                       "referencedDeclaration": 50,
                       "type": "modifier (enum CrowdFunding.State)",
                       "value": "inState"
@@ -5388,9 +5291,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 9,
                           "type": "type(enum CrowdFunding.State)",
                           "value": "State"
@@ -5421,9 +5322,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -5440,10 +5339,7 @@
                                   "typeString": "literal_string \"No contributions after a deadline\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                444,
-                                445
-                              ],
+                              "overloadedDeclarations": [444, 445],
                               "referencedDeclaration": 445,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -5455,29 +5351,21 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "arguments": [
-                                null
-                              ],
+                              "arguments": [null],
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "bool",
                               "type_conversion": false
                             },
                             "children": [
                               {
                                 "attributes": {
-                                  "argumentTypes": [
-                                    null
-                                  ],
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "argumentTypes": [null],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 254,
                                   "type": "function () view returns (bool)",
                                   "value": "beforeDeadline"
@@ -5544,9 +5432,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 33,
                                   "type": "mapping(address => uint256)",
                                   "value": "amounts"
@@ -5570,9 +5456,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 441,
                                       "type": "msg",
                                       "value": "msg"
@@ -5606,9 +5490,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 441,
                                   "type": "msg",
                                   "value": "msg"
@@ -5648,9 +5530,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 37,
                               "type": "uint256",
                               "value": "totalCollected"
@@ -5674,9 +5554,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 441,
                                   "type": "msg",
                                   "value": "msg"
@@ -5723,9 +5601,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 37,
                               "type": "uint256",
                               "value": "totalCollected"
@@ -5737,9 +5613,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 21,
                               "type": "uint256",
                               "value": "targetAmount"
@@ -5771,9 +5645,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 35,
                                       "type": "bool",
                                       "value": "collected"
@@ -5844,9 +5716,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 134,
@@ -5855,9 +5725,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 139,
@@ -5869,9 +5737,7 @@
                   {
                     "attributes": {
                       "argumentTypes": null,
-                      "overloadedDeclarations": [
-                        null
-                      ],
+                      "overloadedDeclarations": [null],
                       "referencedDeclaration": 50,
                       "type": "modifier (enum CrowdFunding.State)",
                       "value": "inState"
@@ -5895,9 +5761,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 9,
                           "type": "type(enum CrowdFunding.State)",
                           "value": "State"
@@ -5928,9 +5792,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -5947,10 +5809,7 @@
                                   "typeString": "literal_string \"Cannot finish campaign before a deadline\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                444,
-                                445
-                              ],
+                              "overloadedDeclarations": [444, 445],
                               "referencedDeclaration": 445,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -5974,29 +5833,21 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "arguments": [
-                                    null
-                                  ],
+                                  "arguments": [null],
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
                                   "isStructConstructorCall": false,
                                   "lValueRequested": false,
-                                  "names": [
-                                    null
-                                  ],
+                                  "names": [null],
                                   "type": "bool",
                                   "type_conversion": false
                                 },
                                 "children": [
                                   {
                                     "attributes": {
-                                      "argumentTypes": [
-                                        null
-                                      ],
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "argumentTypes": [null],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 254,
                                       "type": "function () view returns (bool)",
                                       "value": "beforeDeadline"
@@ -6059,9 +5910,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 35,
                               "type": "bool",
                               "value": "collected"
@@ -6093,9 +5942,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 29,
                                       "type": "enum CrowdFunding.State",
                                       "value": "state"
@@ -6119,9 +5966,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 9,
                                           "type": "type(enum CrowdFunding.State)",
                                           "value": "State"
@@ -6168,9 +6013,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 29,
                                       "type": "enum CrowdFunding.State",
                                       "value": "state"
@@ -6194,9 +6037,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 9,
                                           "type": "type(enum CrowdFunding.State)",
                                           "value": "State"
@@ -6240,9 +6081,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -6263,9 +6102,7 @@
                                   "typeString": "bool"
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 17,
                               "type": "function (address,uint256,bool)",
                               "value": "CampaignFinished"
@@ -6282,9 +6119,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "address",
                               "type_conversion": true
                             },
@@ -6311,9 +6146,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 457,
                                   "type": "contract CrowdFunding",
                                   "value": "this"
@@ -6330,9 +6163,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 37,
                               "type": "uint256",
                               "value": "totalCollected"
@@ -6344,9 +6175,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 35,
                               "type": "bool",
                               "value": "collected"
@@ -6390,9 +6219,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 172,
@@ -6401,9 +6228,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 177,
@@ -6415,9 +6240,7 @@
                   {
                     "attributes": {
                       "argumentTypes": null,
-                      "overloadedDeclarations": [
-                        null
-                      ],
+                      "overloadedDeclarations": [null],
                       "referencedDeclaration": 50,
                       "type": "modifier (enum CrowdFunding.State)",
                       "value": "inState"
@@ -6441,9 +6264,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 9,
                           "type": "type(enum CrowdFunding.State)",
                           "value": "State"
@@ -6474,9 +6295,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "bool",
                           "type_conversion": false
                         },
@@ -6501,9 +6320,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 25,
                                   "type": "address payable",
                                   "value": "beneficiary"
@@ -6520,9 +6337,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 37,
                               "type": "uint256",
                               "value": "totalCollected"
@@ -6554,9 +6369,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 29,
                                       "type": "enum CrowdFunding.State",
                                       "value": "state"
@@ -6580,9 +6393,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 9,
                                           "type": "type(enum CrowdFunding.State)",
                                           "value": "State"
@@ -6629,9 +6440,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 29,
                                       "type": "enum CrowdFunding.State",
                                       "value": "state"
@@ -6655,9 +6464,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 9,
                                           "type": "type(enum CrowdFunding.State)",
                                           "value": "State"
@@ -6716,9 +6523,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 197,
@@ -6727,9 +6532,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 202,
@@ -6741,9 +6544,7 @@
                   {
                     "attributes": {
                       "argumentTypes": null,
-                      "overloadedDeclarations": [
-                        null
-                      ],
+                      "overloadedDeclarations": [null],
                       "referencedDeclaration": 50,
                       "type": "modifier (enum CrowdFunding.State)",
                       "value": "inState"
@@ -6767,9 +6568,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 9,
                           "type": "type(enum CrowdFunding.State)",
                           "value": "State"
@@ -6800,9 +6599,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -6819,10 +6616,7 @@
                                   "typeString": "literal_string \"Nothing was contributed\""
                                 }
                               ],
-                              "overloadedDeclarations": [
-                                444,
-                                445
-                              ],
+                              "overloadedDeclarations": [444, 445],
                               "referencedDeclaration": 445,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
@@ -6859,9 +6653,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 33,
                                       "type": "mapping(address => uint256)",
                                       "value": "amounts"
@@ -6885,9 +6677,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 441,
                                           "type": "msg",
                                           "value": "msg"
@@ -6957,9 +6747,7 @@
                   },
                   {
                     "attributes": {
-                      "assignments": [
-                        214
-                      ]
+                      "assignments": [214]
                     },
                     "children": [
                       {
@@ -7001,9 +6789,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 33,
                               "type": "mapping(address => uint256)",
                               "value": "amounts"
@@ -7027,9 +6813,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 441,
                                   "type": "msg",
                                   "value": "msg"
@@ -7079,9 +6863,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 33,
                                   "type": "mapping(address => uint256)",
                                   "value": "amounts"
@@ -7105,9 +6887,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 441,
                                       "type": "msg",
                                       "value": "msg"
@@ -7178,9 +6958,7 @@
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "bool",
                               "type_conversion": false
                             },
@@ -7217,9 +6995,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 441,
                                           "type": "msg",
                                           "value": "msg"
@@ -7241,9 +7017,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 214,
                                   "type": "uint256",
                                   "value": "contributed"
@@ -7290,9 +7064,7 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 33,
                                           "type": "mapping(address => uint256)",
                                           "value": "amounts"
@@ -7316,9 +7088,7 @@
                                           {
                                             "attributes": {
                                               "argumentTypes": null,
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 441,
                                               "type": "msg",
                                               "value": "msg"
@@ -7340,9 +7110,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 214,
                                       "type": "uint256",
                                       "value": "contributed"
@@ -7387,9 +7155,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "beforeDeadline",
               "scope": 298,
               "stateMutability": "view",
@@ -7399,9 +7165,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 244,
@@ -7466,29 +7230,21 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "arguments": [
-                                null
-                              ],
+                              "arguments": [null],
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
                               "isStructConstructorCall": false,
                               "lValueRequested": false,
-                              "names": [
-                                null
-                              ],
+                              "names": [null],
                               "type": "uint256",
                               "type_conversion": false
                             },
                             "children": [
                               {
                                 "attributes": {
-                                  "argumentTypes": [
-                                    null
-                                  ],
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "argumentTypes": [null],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 262,
                                   "type": "function () view returns (uint256)",
                                   "value": "currentTime"
@@ -7505,9 +7261,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 23,
                               "type": "uint256",
                               "value": "fundingDeadline"
@@ -7542,9 +7296,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "currentTime",
               "scope": 298,
               "stateMutability": "view",
@@ -7554,9 +7306,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 255,
@@ -7606,9 +7356,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 443,
                           "type": "uint256",
                           "value": "now"
@@ -7638,9 +7386,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getTotalCollected",
               "scope": 298,
               "stateMutability": "view",
@@ -7650,9 +7396,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 263,
@@ -7702,9 +7446,7 @@
                       {
                         "attributes": {
                           "argumentTypes": null,
-                          "overloadedDeclarations": [
-                            null
-                          ],
+                          "overloadedDeclarations": [null],
                           "referencedDeclaration": 37,
                           "type": "uint256",
                           "value": "totalCollected"
@@ -7734,9 +7476,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "inProgress",
               "scope": 298,
               "stateMutability": "view",
@@ -7746,9 +7486,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 271,
@@ -7828,9 +7566,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 29,
                                   "type": "enum CrowdFunding.State",
                                   "value": "state"
@@ -7854,9 +7590,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 9,
                                       "type": "type(enum CrowdFunding.State)",
                                       "value": "State"
@@ -7893,9 +7627,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 29,
                                   "type": "enum CrowdFunding.State",
                                   "value": "state"
@@ -7919,9 +7651,7 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 9,
                                       "type": "type(enum CrowdFunding.State)",
                                       "value": "State"
@@ -7966,9 +7696,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "isSuccessful",
               "scope": 298,
               "stateMutability": "view",
@@ -7978,9 +7706,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 287,
@@ -8045,9 +7771,7 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [
-                                null
-                              ],
+                              "overloadedDeclarations": [null],
                               "referencedDeclaration": 29,
                               "type": "enum CrowdFunding.State",
                               "value": "state"
@@ -8071,9 +7795,7 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 9,
                                   "type": "type(enum CrowdFunding.State)",
                                   "value": "State"

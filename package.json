@@ -1,5 +1,5 @@
 {
-  "name": "02",
+  "name": "crowd-funding-dapp",
   "version": "1.0.0",
   "description": "",
   "main": "truffle-config.js",
@@ -7,14 +7,42 @@
     "test": "test"
   },
   "scripts": {
-    "test": "truffle test",
-    "migrate": "truffle migrate",
-    "deploy": "truffle deploy"
+    "test:contracts": "truffle test",
+    "migrate:ganache": "truffle migrate --network ganache && yarn run copy-contracts",
+    "migrate:rinkeby": "truffle migrate --network rinkeby && yarn run copy-contracts",
+    "copy-contracts": "rm -rf ./src/contracts && cp -r ./build/contracts ./src/contracts",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "",
+  "author": "Milton Tulli",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "truffle": "^5.4.12"
+    "moment": "^2.29.1",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-scripts": "3.2.0",
+    "react-toastify": "^8.0.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
+    "truffle": "^5.4.12",
+    "web3": "1.2.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
   }
 }
