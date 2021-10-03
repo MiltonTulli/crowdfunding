@@ -1,3 +1,8 @@
+require("dotenv").config();
+const HDWalletProvider = require("truffle-hdwallet-provider");
+const mnemonic = process.env.MNEMONIC;
+const infuraProjectId = process.env.INFURA_PROJECT_ID;
+
 module.exports = {
   // Uncommenting the defaults below
   // provides for an easier quick-start with Ganache.
@@ -11,6 +16,18 @@ module.exports = {
       port: 7545,
       gas: 5000000,
       network_id: 5777,
+    },
+    rinkeby: {
+      provider: function () {
+        return new HDWalletProvider(
+          mnemonic,
+          `https://rinkeby.infura.io/v3/${infuraProjectId}`
+        );
+      },
+      network_id: 4,
+      gas: 4500000,
+      gasPrice: 10000000000,
+      from: process.env.RINKEBY_SENDER_ACCOUNT,
     },
     // development: {
     //   host: "127.0.0.1",

@@ -1,30 +1,22 @@
 import React, { Component } from "react";
+import moment from "moment";
 import CrowdFunding from "./contracts/CrowdFunding.json";
 import getWeb3 from "./getWeb3";
+import { ToastContainer, toast } from "react-toastify";
+import {
+  Container,
+  Header,
+  Divider,
+  Button,
+  Input,
+  Grid,
+  Progress,
+  Message,
+  Label,
+} from "semantic-ui-react";
 
-import "./App.css";
-
-function formatTimestamp(UNIX_timestamp) {
-  var a = new Date(UNIX_timestamp * 1000);
-  var months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  return `${date} ${month} ${year}`;
-}
+import "semantic-ui-css/semantic.min.css";
+import "react-toastify/dist/ReactToastify.css";
 
 const parseState = (numState) =>
   ({ 0: "Ongoing", 1: "Failed", 2: "Succeeded", 3: "PaidOut" }[numState]);
@@ -39,12 +31,15 @@ class App extends Component {
     contractTotalCollected: "0",
     contractState: 0,
     deadLine: 0,
-    donationValue: null,
+    donationValue: "",
+    selectedAccount: "",
+    loading: false,
   };
 
-  componentDidMount = async () => {
+  componentDidMount = () => {};
+
+  handleConnect = async () => {
     try {
-      // Get network provider and web3 instance.
       const web3 = await getWeb3();
 
       // Use web3 to get the user's accounts.
@@ -89,19 +84,31 @@ class App extends Component {
 
   handleClick = async () => {
     const { accounts, contract, donationValue } = this.state;
+
+    this.setState({ loading: true });
+    const id = toast.loading("Transction in progres...");
+
     contract.methods
       .contribute()
       .send({
-        // value: web3.utils.toWei("1", "ether"),
         value: donationValue,
         from: accounts[0],
       })
       .then((result) => {
-        console.log("success", result);
+        this.setState({ donationValue: "" });
         this.loadInfo();
       })
       .catch((err) => {
         console.log("error", err);
+      })
+      .finally(() => {
+        this.setState({ loading: false });
+        toast.update(id, {
+          render: "Transaction completed!",
+          type: "success",
+          isLoading: false,
+          autoClose: 1500,
+        });
       });
   };
 
@@ -114,34 +121,101 @@ class App extends Component {
       web3,
       deadLine,
       donationValue,
+      accounts,
+      loading,
     } = this.state;
-    if (!this.state.web3) {
-      return <div>Loading Web3, accounts, and contract...</div>;
-    }
+    const progress = Math.round(
+      (contractTotalCollected * 100) / contractTargetAmount
+    );
     return (
-      <div className="App">
-        <h1>
-          {contractName} (sate: {parseState(contractState)})
-        </h1>
-        <p>
-          We are looking to get{" "}
-          {web3?.utils?.fromWei(`${contractTargetAmount || 0}`)} ETH
-        </p>
-        <h2>
-          We just have {web3?.utils?.fromWei(`${contractTotalCollected || 0}`)}{" "}
-          ETH
-        </h2>
+      <Container style={{ margin: 16 }}>
+        <Header as="h1">Crowd Funding ETH smart contract</Header>
+        <Divider />
+        {!accounts ? (
+          <>
+            <Button color="blue" onClick={this.handleConnect}>
+              Connect to your wallet
+            </Button>
+          </>
+        ) : (
+          <Grid container>
+            <Grid.Row>
+              <p>Contract Name: {contractName}</p>
+            </Grid.Row>
+            <Grid.Row>
+              <p>Status: {parseState(contractState)}</p>
+            </Grid.Row>
+            <Grid.Row>
+              <p>
+                Deadline: {moment.unix(deadLine).format("LL")} - ({" "}
+                {moment.unix(deadLine).fromNow()} )
+              </p>
+            </Grid.Row>
+            <Grid.Row>
+              <p>
+                Looking to get:{" "}
+                {web3?.utils?.fromWei(`${contractTargetAmount || 0}`)} ETH
+              </p>
+            </Grid.Row>
+            <Grid.Row>
+              <p>
+                Total Collected{" "}
+                {web3?.utils?.fromWei(`${contractTotalCollected || 0}`)} ETH
+              </p>
+            </Grid.Row>
+            <Grid.Row>
+              <Progress
+                style={{ width: "100%" }}
+                progress
+                percent={progress}
+                active
+              />
+            </Grid.Row>
+            <Divider />
+            <Grid.Row>
+              <Message>
+                <Message.Header>Want to donate?</Message.Header>
+                <p>
+                  Set your donation amount below and press the "Donate" button
+                </p>
+              </Message>
+            </Grid.Row>
 
-        <p>Deadline: {formatTimestamp(deadLine)}</p>
-
-        <button onClick={this.handleClick}>Donate</button>
-        <input
-          placeholder="Donation Value"
-          value={donationValue}
-          onChange={(e) => this.setState({ donationValue: e.target.value })}
-          type="number"
-        />
-      </div>
+            <Grid.Row>
+              <Label>
+                <p>From Account</p>
+              </Label>
+              <Input value={accounts[0].slice(-6)} disabled />
+            </Grid.Row>
+            <Grid.Row>
+              <Input
+                placeholder="Donation Amount"
+                value={donationValue}
+                onChange={(e) => {
+                  this.setState({ donationValue: e.target.value });
+                }}
+                type="number"
+                label={{ basic: true, content: "wei" }}
+                labelPosition="right"
+                iconPosition="left"
+                loading={loading}
+                disabled={loading}
+              />
+            </Grid.Row>
+            <Grid.Row>
+              <Button
+                loading={loading}
+                onClick={this.handleClick}
+                color="blue"
+                disabled={donationValue < 1 || loading}
+              >
+                Donate
+              </Button>
+            </Grid.Row>
+          </Grid>
+        )}
+        <ToastContainer autoClose={5000} />
+      </Container>
     );
   }
 }
