@@ -96,19 +96,25 @@ class App extends Component {
       })
       .then((result) => {
         this.setState({ donationValue: "" });
-        this.loadInfo();
-      })
-      .catch((err) => {
-        console.log("error", err);
-      })
-      .finally(() => {
-        this.setState({ loading: false });
         toast.update(id, {
           render: "Transaction completed!",
           type: "success",
           isLoading: false,
           autoClose: 1500,
         });
+        this.loadInfo();
+      })
+      .catch((err) => {
+        console.log("error", err);
+        toast.update(id, {
+          render: "Couldn't complete transaction",
+          type: "error",
+          isLoading: false,
+          autoClose: 1500,
+        });
+      })
+      .finally(() => {
+        this.setState({ loading: false });
       });
   };
 
